@@ -1,43 +1,94 @@
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background: #f9f9f9;
-    color: #333;
-    margin: 0;
-    padding: 0;
+margin: 0;
+font-family: 'Arial', sans-serif;
+background: linear-gradient(120deg, #ff9a9e, #fad0c4);
+color: #222;
+line-height: 1.6;
 }
-
-header {
-    background: #007BFF;
-    color: white;
-    padding: 10px 0;
-    text-align: center;
+nav {
+margin-top: 1.5em;
 }
-
-header nav a {
-    color: white;
-    margin: 0 10px;
-    text-decoration: none;
+nav a {
+color: #edf2f4;
+text-decoration: none;
+margin: 0 1em;
+font-size: 1.3em;
+transition: color 0.3s ease, transform 0.2s ease;
 }
-
-header nav a:hover {
-    text-decoration: underline;
+nav a:hover {
+color: #ff6347;
+transform: scale(1.1);
 }
-
 main {
-    padding: 20px;
-    background: white;
-    margin: 20px auto;
-    max-width: 800px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+padding: 3em;
+text-align: center;
+animation: fadeIn 1.5s ease;
 }
-
+@keyframes fadeIn {
+from { opacity: 0; transform: translateY(30px); }
+to { opacity: 1; transform: translateY(0); }
+}
+main h2 {
+font-size: 2.5em;
+color: #2b2d42;
+margin-bottom: 1em;
+text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+}
+header {
+background: linear-gradient(90deg, #2b2d42, #6a4c93);
+color: #edf2f4;
+padding: 2em 0;
+text-align: center;
+box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+border-bottom: 5px solid #ff6347;
+}
+header h1 {
+margin: 0;
+font-size: 3.5em;
+font-weight: 700;
+text-transform: uppercase;
+animation: glow 2s infinite alternate;
+letter-spacing: 3px;
+}
+nav {
+margin-top: 1.5em;
+}
+nav a {
+color: #edf2f4;
+text-decoration: none;
+margin: 0 1.2em;
+font-size: 1.4em;
+font-weight: bold;
+transition: color 0.3s ease, transform 0.2s ease;
+}
+nav a:hover {
+color: #ff7f50;
+transform: scale(1.1) translateY(-3px);
+}
 footer {
-    text-align: center;
-    background: #333;
-    color: white;
-    padding: 10px 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+background: linear-gradient(90deg, #6a4c93, #2b2d42);
+color: #edf2f4;
+text-align: center;
+padding: 2em 0;
+position: fixed;
+bottom: 0;
+width: 100%;
+box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.4);
+border-top: 5px solid #ff6347;
 }
+footer p {
+margin: 0;
+font-size: 1em;
+font-weight: 500;
+}
+footer a {
+color: #ff7f50;
+text-decoration: none;
+font-size: 1.2em;
+font-weight: bold;
+transition: color 0.3s ease;
+}
+footer a:hover {
+text-decoration: underline;
+color: #f4a261;
+} 
